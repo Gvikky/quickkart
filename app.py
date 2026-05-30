@@ -9,13 +9,11 @@ st.title("🛒 QuickKart Marketplace & Logistics Dashboard")
 # ---------------------------
 @st.cache_data
 def load_data():
-    base = r"C:\Users\acer\Downloads\QuickKart_TakeHome_Brief\quickkart_dataset"
-
-    customers = pd.read_csv(base + r"\customers.csv")
-    orders = pd.read_csv(base + r"\orders.csv")
-    order_items = pd.read_csv(base + r"\order_items.csv")
-    products = pd.read_csv(base + r"\products.csv")
-    shipments = pd.read_csv(base + r"\shipments.csv")
+    customers = pd.read_csv("customers.csv")
+    orders = pd.read_csv("orders.csv")
+    order_items = pd.read_csv("order_items.csv")
+    products = pd.read_csv("products.csv")
+    shipments = pd.read_csv("shipments.csv")
 
     return customers, orders, order_items, products, shipments
 
